@@ -1,1 +1,209 @@
-{}
+{
+  "site": {
+    "name": "Build a Boss Wiki",
+    "shortName": "Build a Boss",
+    "tagline": "Guia completo, receitas de criação, mecânicas e dicas de combate",
+    "description": "Sua wiki definitiva para Build a Boss no Roblox. Explore receitas detalhadas de criação de chefes, estratégias de combate, mecânicas de jogo e as últimas atualizações.",
+    "legalNotice": "Build a Boss Wiki é um site de fãs não oficial criado pela comunidade e não é afiliado nem endossado pelos desenvolvedores do Roblox ou de Build a Boss."
+  },
+  "nav": {
+    "guide": "Guia",
+    "mechanics": "Mecânicas",
+    "challenges": "Desafios",
+    "combat": "Combate",
+    "characters": "Personagens",
+    "updates": "Atualizações",
+    "community": "Comunidade"
+  },
+  "home": {
+    "meta": {
+      "title": "Build a Boss Wiki | Guias, Receitas de Criação e Dicas de Combate",
+      "description": "Aprenda tudo sobre Build a Boss no Roblox. Encontre receitas de criação, estratégias de chefes, mecânicas e guias comunitários."
+    },
+    "hero": {
+      "eyebrow": "Wiki da Comunidade no Roblox",
+      "title": "Build a Boss Wiki",
+      "description": "Seu guia definitivo para Build a Boss no Roblox. Descubra como criar chefes usando armas, lasers e armaduras, e enfrente 75 níveis em 10 zonas.",
+      "stats": {
+        "zones": "10 Zonas",
+        "levels": "75 Níveis",
+        "genre": "PvE de Criação de Chefes"
+      },
+      "primaryCta": "Guia de Início",
+      "secondaryCta": "Explorar Módulos",
+      "tertiaryCta": "Jogar no Roblox",
+      "videoLabel": "Ver Guia Rápido"
+    },
+    "updates": {
+      "title": "Atualizações e Guias Recentes",
+      "browse": "Navegar por tema:",
+      "viewAll": "Ver todos os guias →"
+    },
+    "start": {
+      "eyebrow": "Trilha Inicial",
+      "title": "Comece em Build a Boss",
+      "cards": [
+        {
+          "title": "Dicas para Iniciantes",
+          "desc": "Aprenda o ciclo básico de construção, posicionamento de armas e ativação do seu primeiro chefe.",
+          "badge": "Essencial",
+          "action": "Ler Guia Básico"
+        },
+        {
+          "title": "Criação e Combinações",
+          "desc": "Domine o posicionamento de lasers, armas e armaduras para maximizar o poder do seu chefe.",
+          "badge": "Estratégia",
+          "action": "Ver Receitas"
+        },
+        {
+          "title": "Progressão de Zonas",
+          "desc": "Avance pelos 75 níveis e 10 zonas aprimorando seu dano e suas defesas.",
+          "badge": "Progressão",
+          "action": "Ver Zonas"
+        }
+      ]
+    },
+    "popular": {
+      "eyebrow": "Conteúdo em Destaque",
+      "title": "Mais Consultados",
+      "quickLinks": [
+        "Guia para Iniciantes",
+        "Armas e Lasers",
+        "Estratégias de Combate",
+        "Chefes por Zona"
+      ],
+      "cards": [
+        {
+          "title": "Planejador de Chefes",
+          "desc": "Otimize a disposição das peças para criar o chefe ideal individual ou cooperativo.",
+          "badge": "Popular",
+          "action": "Explorar"
+        },
+        {
+          "title": "Guia de Combate",
+          "desc": "Táticas de esquiva, padrões de ataque dos chefes e rotação de armas de alto rendimento.",
+          "badge": "Combate",
+          "action": "Aprender"
+        }
+      ]
+    },
+    "aboutGame": {
+      "title": "Sobre o Build a Boss",
+      "paragraphs": [
+        "Build a Boss é uma experiência PvE em estilo pixel no Roblox onde os jogadores coletam peças como armas, lasers e armaduras para criar e derrotar chefes formidáveis.",
+        "Com 75 níveis espalhados por 10 zonas temáticas, teste suas criações em combates intensos sozinho ou com amigos para desbloquear recompensas exclusivas."
+      ],
+      "stats": {
+        "levels": "75 Níveis",
+        "zones": "10 Zonas",
+        "combat": "PvE e Construção",
+        "platform": "Roblox"
+      },
+      "cta": "Jogar no Roblox Agora"
+    },
+    "explore": {
+      "title": "Explorar a Wiki",
+      "description": "Navegue por todas as categorias para encontrar artigos, guias e estratégias completas.",
+      "modules": [
+        {
+          "name": "Guias",
+          "desc": "Tutoriais passo a passo e rotas rápidas para iniciantes."
+        },
+        {
+          "name": "Mecânicas",
+          "desc": "Explicação detalhada sobre colocação de blocos e atributos."
+        },
+        {
+          "name": "Combate",
+          "desc": "Táticas de batalha e otimização de armamentos."
+        },
+        {
+          "name": "Atualizações",
+          "desc": "Notas de atualização e novidades do jogo."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "description": "Respostas para dúvidas comuns sobre jogabilidade, invocação e mecânicas.",
+      "q1": "Como invoco meu primeiro chefe?",
+      "a1": "Reúna os materiais básicos necessários no menu de invocação, construa o núcleo do altar do chefe em sua arena e interaja com ele para iniciar a batalha.",
+      "q2": "Posso enfrentar chefes com amigos?",
+      "a2": "Sim! Você pode convidar amigos para a sua arena para enfrentarem juntos chefes mais desafiadores e compartilhar as recompensas.",
+      "q3": "Como consigo materiais de criação mais raros?",
+      "a3": "Materiais raros são obtidos ao derrotar chefes de nível mais alto e ao concluir desafios especiais cronometrados.",
+      "q4": "Perco minhas construções se for derrotado pelo chefe?",
+      "a4": "Não, sua arena e os blocos não utilizados permanecem intactos; você só precisará invocar o chefe novamente usando novos catalisadores."
+    },
+    "finalCta": {
+      "title": "Pronto para Criar seu Próximo Chefe?",
+      "description": "Confira nossos guias detalhados, aperfeiçoe suas receitas e domine os 75 níveis de Build a Boss.",
+      "primary": "Jogar no Roblox",
+      "secondary": "Ver Guias para Iniciantes"
+    }
+  },
+  "shared": {
+    "wikiNavigation": "Navegação Wiki",
+    "activeCodes": "Códigos Ativos",
+    "updated": "Atualizado",
+    "viewAllCodes": "Ver Todos os Códigos",
+    "playOnRoblox": "Jogar no Roblox",
+    "inThisSection": "Nesta seção",
+    "tableOfContents": "Nesta página",
+    "nextSteps": "Próximos Passos",
+    "needHelp": "Precisa de Ajuda?",
+    "relatedReading": "Leituras Relacionadas",
+    "relatedGuides": "Guias Relacionados",
+    "readMore": "Ler mais",
+    "officialMedia": "Mídias Oficiais",
+    "home": "Início",
+    "noGuidesAvailable": "Nenhum guia disponível ainda. Volte em breve!"
+  },
+  "footer": {
+    "aboutTitle": "Build a Boss Wiki",
+    "about": "Build a Boss Wiki é uma central independente de guias feita por fãs que abrange criações de chefes, armas, lasers, armaduras, níveis, zonas e conhecimentos essenciais do jogo.",
+    "quickLinks": "Links Rápidos",
+    "guides": "Guias",
+    "legal": "Legal",
+    "copyright": "2026 Build a Boss Wiki. Não afiliado à taapr studios nem ao Roblox.",
+    "description": "PvE de criação de chefes em pixel no Roblox. Crie chefes com armas, lasers e armaduras ao longo de 75 níveis em 10 zonas.",
+    "playGame": "Jogar Build a Boss",
+    "officialDiscord": "Comunidade do Roblox",
+    "officialYoutube": "YouTube do Roblox",
+    "vvBuilder": "Planejador de Chefes",
+    "beginnerGuide": "Guia para Iniciantes",
+    "raceGuides": "Níveis e Zonas",
+    "bossGuides": "Criações de Chefes",
+    "buildGuide": "Peças e Armas",
+    "privacyPolicy": "Política de Privacidade",
+    "termsOfService": "Termos de Serviço"
+  },
+  "guide": {
+    "overviewTitle": "Guias de Build a Boss",
+    "overviewDescription": "Tutoriais passo a passo, guias para iniciantes e dicas avançadas para evoluir no Build a Boss."
+  },
+  "mechanics": {
+    "overviewTitle": "Mecânicas de Jogo",
+    "overviewDescription": "Análise detalhada das mecânicas principais, posicionamento de blocos, invocação e recursos."
+  },
+  "challenges": {
+    "overviewTitle": "Desafios e Conquistas",
+    "overviewDescription": "Guias detalhados para superar os desafios mais difíceis, missões por tempo e conquistas."
+  },
+  "combat": {
+    "overviewTitle": "Guias de Combate",
+    "overviewDescription": "Estratégias de ataque, padrões de chefes, esquivas e maximização de dano."
+  },
+  "characters": {
+    "overviewTitle": "Personagens e Classes",
+    "overviewDescription": "Informações sobre classes, atributos, melhorias e sinergias de personagens em Build a Boss."
+  },
+  "updates": {
+    "overviewTitle": "Registro de Atualizações",
+    "overviewDescription": "Notas de atualização completas, ajustes de equilíbrio e novos conteúdos adicionados ao jogo."
+  },
+  "community": {
+    "overviewTitle": "Comunidade e Recursos",
+    "overviewDescription": "Conecte-se com outros jogadores, compartilhe criações de chefes e acesse recursos comunitários."
+  }
+}

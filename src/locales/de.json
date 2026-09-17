@@ -1,1 +1,209 @@
-{}
+{
+  "site": {
+    "name": "Build a Boss Wiki",
+    "shortName": "Build a Boss",
+    "tagline": "Umfassender Leitfaden, Bauanleitungen, Spielmechaniken und Kampftipps",
+    "description": "Dein ultimatives Wiki für Build a Boss auf Roblox. Entdecke detaillierte Boss-Baupläne, Kampfstrategien, Spielmechaniken und die neuesten Updates.",
+    "legalNotice": "Build a Boss Wiki ist eine inoffizielle, von der Community erstellte Fan-Website und steht in keiner Verbindung zu den Entwicklern von Roblox oder Build a Boss."
+  },
+  "nav": {
+    "guide": "Leitfaden",
+    "mechanics": "Mechaniken",
+    "challenges": "Herausforderungen",
+    "combat": "Kampf",
+    "characters": "Charaktere",
+    "updates": "Updates",
+    "community": "Community"
+  },
+  "home": {
+    "meta": {
+      "title": "Build a Boss Wiki | Leitfäden, Baupläne und Kampftipps",
+      "description": "Erfahre alles über Build a Boss auf Roblox. Finde Bauanleitungen, Boss-Strategien, Spielmechaniken und Community-Guides."
+    },
+    "hero": {
+      "eyebrow": "Roblox Community-Wiki",
+      "title": "Build a Boss Wiki",
+      "description": "Dein ultimativer Leitfaden für Build a Boss auf Roblox. Erfahre, wie du Bosse aus Waffen, Lasern und Rüstungen baust und 75 Level in 10 Zonen meisterst.",
+      "stats": {
+        "zones": "10 Zonen",
+        "levels": "75 Level",
+        "genre": "Pixel Boss-Building PvE"
+      },
+      "primaryCta": "Start-Leitfaden",
+      "secondaryCta": "Module erkunden",
+      "tertiaryCta": "Auf Roblox spielen",
+      "videoLabel": "Kurzanleitung ansehen"
+    },
+    "updates": {
+      "title": "Aktuelle Updates & Guides",
+      "browse": "Nach Thema durchsuchen:",
+      "viewAll": "Alle Guides ansehen →"
+    },
+    "start": {
+      "eyebrow": "Einstiegsroute",
+      "title": "Starte in Build a Boss",
+      "cards": [
+        {
+          "title": "Einsteiger-Tipps",
+          "desc": "Lerne die Grundlagen des Bauens, Platzierens von Waffen und Beschwörens deines ersten Bosses.",
+          "badge": "Wichtig",
+          "action": "Basis-Guide lesen"
+        },
+        {
+          "title": "Herstellung & Kombinationen",
+          "desc": "Meistere die Platzierung von Lasern, Waffen und Rüstung für maximale Boss-Stärke.",
+          "badge": "Strategie",
+          "action": "Baupläne ansehen"
+        },
+        {
+          "title": "Zonen-Fortschritt",
+          "desc": "Schreite durch die 75 Level und 10 Zonen voran, indem du Schaden und Verteidigung optimierst.",
+          "badge": "Fortschritt",
+          "action": "Zonen ansehen"
+        }
+      ]
+    },
+    "popular": {
+      "eyebrow": "Häufig aufgerufen",
+      "title": "Beliebte Themen",
+      "quickLinks": [
+        "Einsteiger-Guide",
+        "Waffen & Laser",
+        "Kampfstrategien",
+        "Bosse nach Zonen"
+      ],
+      "cards": [
+        {
+          "title": "Boss-Planer",
+          "desc": "Optimiere die Anordnung der Teile, um den ultimativen Boss solo oder im Koop zu erschaffen.",
+          "badge": "Beliebt",
+          "action": "Erkunden"
+        },
+        {
+          "title": "Kampf-Leitfaden",
+          "desc": "Ausweichtaktiken, Angriffsmuster der Bosse und hocheffiziente Waffenrotationen.",
+          "badge": "Kampf",
+          "action": "Lernen"
+        }
+      ]
+    },
+    "aboutGame": {
+      "title": "Über Build a Boss",
+      "paragraphs": [
+        "Build a Boss ist ein Pixel-PvE-Spiel auf Roblox, bei dem Spieler Teile wie Waffen, Laser und Rüstungen sammeln, um beeindruckende Bosse zu bauen und zu bekämpfen.",
+        "Mit 75 Levels in 10 verschiedenen Zonen kannst du deine Bauten allein oder im Team auf die Probe stellen und exklusive Belohnungen freischalten."
+      ],
+      "stats": {
+        "levels": "75 Level",
+        "zones": "10 Zonen",
+        "combat": "PvE & Boss-Bauen",
+        "platform": "Roblox"
+      },
+      "cta": "Jetzt auf Roblox spielen"
+    },
+    "explore": {
+      "title": "Wiki erkunden",
+      "description": "Durchstöbere alle Kategorien nach Artikeln, Leitfäden und Expertenstrategien.",
+      "modules": [
+        {
+          "name": "Leitfäden",
+          "desc": "Schritt-für-Schritt-Anleitungen und Schnellstart-Tipps."
+        },
+        {
+          "name": "Mechaniken",
+          "desc": "Detaillierte Erklärungen zu Blockplatzierung und Attributen."
+        },
+        {
+          "name": "Kampf",
+          "desc": "Kampftaktiken und Waffenoptimierung."
+        },
+        {
+          "name": "Updates",
+          "desc": "Patchnotizen und Neuigkeiten im Spiel."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "description": "Antworten auf die wichtigsten Fragen zu Gameplay, Beschwörung und Mechaniken.",
+      "q1": "Wie beschwöre ich meinen ersten Boss?",
+      "a1": "Sammle die erforderlichen Grundmaterialien im Beschwörungsmenü, baue den Altar-Kern in deiner Arena und aktiviere ihn, um den Kampf zu starten.",
+      "q2": "Kann ich Bosse zusammen mit Freunden bekämpfen?",
+      "a2": "Ja! Du kannst andere Spieler in deine Arena einladen, um gemeinsam stärkere Bosse zu besiegen und Belohnungen zu teilen.",
+      "q3": "Wie erhalte ich seltenere Baumaterialien?",
+      "a3": "Seltene Materialien erhältst du durch das Besiegen höherstufiger Bosse und das Abschließen spezieller zeitlich begrenzter Herausforderungen.",
+      "q4": "Gehen meine Bauten verloren, wenn der Boss mich besiegt?",
+      "a4": "Nein, deine Arena und deine platzierten Blöcke bleiben sicher erhalten; du musst lediglich neue Katalysatoren nutzen, um den Boss erneut zu beschwören."
+    },
+    "finalCta": {
+      "title": "Bereit, deinen nächsten Boss zu bauen?",
+      "description": "Nutze unsere detaillierten Leitfäden, optimiere deine Baupläne und meistere alle 75 Level in Build a Boss.",
+      "primary": "Auf Roblox spielen",
+      "secondary": "Einsteiger-Guides ansehen"
+    }
+  },
+  "shared": {
+    "wikiNavigation": "Wiki-Navigation",
+    "activeCodes": "Aktive Codes",
+    "updated": "Aktualisiert",
+    "viewAllCodes": "Alle Codes ansehen",
+    "playOnRoblox": "Auf Roblox spielen",
+    "inThisSection": "In diesem Abschnitt",
+    "tableOfContents": "Auf dieser Seite",
+    "nextSteps": "Nächste Schritte",
+    "needHelp": "Brauchst du Hilfe?",
+    "relatedReading": "Verwandte Artikel",
+    "relatedGuides": "Verwandte Guides",
+    "readMore": "Mehr lesen",
+    "officialMedia": "Offizielle Medien",
+    "home": "Startseite",
+    "noGuidesAvailable": "Noch keine Guides verfügbar. Schau bald wieder vorbei!"
+  },
+  "footer": {
+    "aboutTitle": "Build a Boss Wiki",
+    "about": "Build a Boss Wiki ist eine unabhängige, von Fans erstellte Guide-Zentrale über Boss-Bauten, Waffen, Laser, Rüstungen, Level, Zonen und grundlegendes Spielwissen.",
+    "quickLinks": "Schnelllinks",
+    "guides": "Leitfäden",
+    "legal": "Rechtliches",
+    "copyright": "2026 Build a Boss Wiki. Nicht mit taapr studios oder Roblox verbunden.",
+    "description": "Pixel Boss-Building PvE auf Roblox. Baue Bosse aus Waffen, Lasern & Rüstung in 75 Levels über 10 Zonen.",
+    "playGame": "Build a Boss spielen",
+    "officialDiscord": "Roblox-Community",
+    "officialYoutube": "Roblox YouTube",
+    "vvBuilder": "Boss-Planer",
+    "beginnerGuide": "Einsteiger-Guide",
+    "raceGuides": "Level & Zonen",
+    "bossGuides": "Boss-Bauten",
+    "buildGuide": "Teile & Waffen",
+    "privacyPolicy": "Datenschutzerklärung",
+    "termsOfService": "Nutzungsbedingungen"
+  },
+  "guide": {
+    "overviewTitle": "Build a Boss Leitfäden",
+    "overviewDescription": "Schritt-für-Schritt-Anleitungen, Einsteigerhilfen und fortgeschrittene Tipps für den Spielfortschritt in Build a Boss."
+  },
+  "mechanics": {
+    "overviewTitle": "Spielmechaniken",
+    "overviewDescription": "Detaillierte Einblicke in Kernmechaniken, Blockplatzierung, Beschwörung und Ressourcensysteme."
+  },
+  "challenges": {
+    "overviewTitle": "Herausforderungen & Erfolge",
+    "overviewDescription": "Detaillierte Leitfäden zur Bewältigung schwieriger Herausforderungen, Zeitmissionen und Erfolge."
+  },
+  "combat": {
+    "overviewTitle": "Kampfleitfäden",
+    "overviewDescription": "Angriffsstrategien, Boss-Verhaltensmuster, Ausweichtechniken und Schadensmaximierung."
+  },
+  "characters": {
+    "overviewTitle": "Charaktere & Klassen",
+    "overviewDescription": "Informationen zu Klassen, Attributen, Upgrades und Synergien in Build a Boss."
+  },
+  "updates": {
+    "overviewTitle": "Update-Verlauf",
+    "overviewDescription": "Alle Patchnotizen, Balance-Anpassungen und neuen Inhalte im Spiel im Überblick."
+  },
+  "community": {
+    "overviewTitle": "Community & Ressourcen",
+    "overviewDescription": "Vernetze dich mit anderen Baumeistern, teile Boss-Setups und erhalte Zugriff auf Community-Ressourcen."
+  }
+}
