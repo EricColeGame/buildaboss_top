@@ -1,6 +1,6 @@
 {
   "site": {
-    "name": "Build a Boss Wiki",
+    "name": "buildaboss Wiki",
     "shortName": "Build a Boss",
     "tagline": "Roblox Codes, Levels, Zones & Boss Builds Guide",
     "description": "Build a Boss Wiki with Roblox codes, boss builds, levels, zones, upgrades, parts, battle tips and beginner guides for building stronger custom bosses.",
@@ -9,8 +9,8 @@
   "nav": {},
   "home": {
     "meta": {
-      "title": "My Seafood Stand Wiki — Codes, Recipes, Upgrades & Guides",
-      "description": "Complete My Seafood Stand guide on Roblox with active working codes, all fish & recipes, best upgrades tier list, and fast cash tips."
+      "title": "Build a Boss Wiki — Codes, Levels, Zones & Boss Builds",
+      "description": "Build a Boss Wiki on Roblox with active codes, parts & weapons guides, best boss builds, levels walkthrough, and fast cash tips."
     },
     "hero": {
       "eyebrow": "Pixel Boss Building PvE",
@@ -34,27 +34,27 @@
     },
     "start": {
       "eyebrow": "Start Here",
-      "title": "Your My Seafood Stand Journey",
+      "title": "Your Build a Boss Journey",
       "cards": [
         {
           "number": "1",
           "title": "Beginner Guide",
-          "description": "Master the Spirit World from day one with our comprehensive beginner guide covering controls, combat, and early progression."
+          "description": "Master the basics of assembling parts, equipping weapons, and launching into PvE battles from day one."
         },
         {
           "number": "2",
-          "title": "Fastest Leveling",
-          "description": "Dominate early game and max your progression with the most efficient leveling routes and strategies."
+          "title": "Fast Cash & Gems Guide",
+          "description": "Maximize battle winnings and learn the most effective farming methods to fund continuous boss upgrades."
         },
         {
           "number": "3",
-          "title": "Best Farming Spots",
-          "description": "Maximize your Soul Essence and EXP gains with optimal farming locations for every stage."
+          "title": "Best Boss Builds",
+          "description": "Discover optimal combinations of guns, armor plating, and energy lasers to counter tough level bosses."
         },
         {
           "number": "4",
-          "title": "How to Extract",
-          "description": "Learn the best methods and locations for extracting resources in My Seafood Stand."
+          "title": "Active Codes & Rewards",
+          "description": "Find the latest working codes and learn how to redeem free rewards and in-game boosts."
         }
       ]
     },
@@ -125,15 +125,15 @@
       ]
     },
     "aboutGame": {
-      "title": "What is My Seafood Stand?",
+      "title": "What is Build a Boss?",
       "paragraphs": [
-        "My Seafood Stand is a stylized fighting RPG on Roblox inspired by the Bleach anime universe. Choose from three playable races Shinigami, Quincy, or Hollow each with unique progression systems, unlockable abilities, and evolution paths. Master over 130 skills as you fight your way to the level 100 cap.",
-        "Whether you're unlocking your first Shikai, evolving from a base Hollow into an Arrancar, or grinding Quincy Lieutenant missions, our wiki covers every system with detailed guides, data tables, and step-by-step walkthroughs."
+        "Build a Boss is a fast-paced 2D pixel-art PvE building and combat game on Roblox developed by taapr studios. Players design and assemble their own mechanical battle boss using customizable guns, lasers, and protective armor, then deploy their creation into intense level-based combat.",
+        "Fight through 75 levels across 10 distinct zones, earn Cash and Gems with every victory, and continuously rebuild and upgrade your boss with high-powered weaponry to conquer all challenges."
       ],
       "stats": [
         {
           "label": "Developer",
-          "value": "Midnight Continent"
+          "value": "taapr studios"
         },
         {
           "label": "Platform",
@@ -141,158 +141,220 @@
         },
         {
           "label": "Genre",
-          "value": "Fighting RPG"
+          "value": "PvE / Boss Builder"
         },
         {
           "label": "Visits",
-          "value": "12.6M+"
+          "value": "92K+"
         },
         {
-          "label": "Favorites",
-          "value": "243K+"
+          "label": "Levels",
+          "value": "75"
         },
         {
-          "label": "Total Skills",
-          "value": "130+"
+          "label": "Zones",
+          "value": "10"
         },
         {
-          "label": "Level Cap",
-          "value": "100"
+          "label": "Style",
+          "value": "2D Pixel Art"
         }
       ],
       "cta": "Explore All Guides"
     },
     "explore": {
-      "title": "Explore My Seafood Stand Wiki",
-      "description": "Master your seafood restaurant on Roblox with essential progression guides, active codes, complete fish & recipe catalogs, and optimal upgrade strategies.",
+      "title": "Explore Build a Boss Wiki",
+      "description": "Explore our complete guides for Build a Boss on Roblox, covering boss construction, weapons, level progression, and reward codes.",
       "modules": [
         {
           "order": 1,
-          "name": "My Seafood Stand Working Codes",
-          "description": "Redeem the latest working codes to claim free coins, gems, exclusive cosmetics, and boost items before they expire.",
-          "href": "/codes/my-seafood-stand-codes",
-          "displayType": "code-box",
+          "name": "buildaboss Beginner Guide",
+          "description": "Step-by-step introduction covering core mechanics: buying parts, assembling your custom boss, entering PvE combat, earning Cash and Gems, and rebuilding for power.",
+          "href": "/guide/build-a-boss-beginner-guide",
+          "displayType": "step-by-step",
           "highlights": [
             {
-              "label": "Code",
-              "detail": "FULLRELEASE — Free Cash & Rewards"
+              "label": "1",
+              "detail": "Purchase starter weapons and chassis armor from the parts shop"
             },
             {
-              "label": "Code",
-              "detail": "75KLIKES — Exclusive Ability Reroll"
+              "label": "2",
+              "detail": "Assemble guns and lasers onto your custom mechanical boss"
             },
             {
-              "label": "Tip",
-              "detail": "Codes are case-sensitive; enter them in the Settings menu"
+              "label": "3",
+              "detail": "Deploy into combat levels to defeat enemies and claim Cash and Gems"
+            },
+            {
+              "label": "4",
+              "detail": "Rebuild and upgrade components to take on higher zone levels"
             }
           ]
         },
         {
           "order": 2,
-          "name": "Beginner Guide: How to Start & Serve Customers",
-          "description": "Step-by-step beginner guide covering customer ordering, food prep, station management, and cashier checkout mechanics.",
-          "href": "/guide/my-seafood-stand-beginner-guide",
-          "displayType": "feature-cards",
+          "name": "buildaboss Parts Guide",
+          "description": "Comprehensive overview of weapons, lasers, armor plates, and structural components used to customize and strengthen your boss.",
+          "href": "/parts/build-a-boss-parts-guide",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Step 1",
-              "detail": "Take customer order at the stall front"
+              "label": "Guns",
+              "detail": "Rapid-fire ballistic cannons delivering consistent physical damage"
             },
             {
-              "label": "Step 2",
-              "detail": "Cook seafood on the grill or boil station"
+              "label": "Lasers",
+              "detail": "High-energy beam weapons piercing multiple enemy shields"
             },
             {
-              "label": "Step 3",
-              "detail": "Serve warm food promptly for maximum customer tips"
+              "label": "Armor",
+              "detail": "Reinforced plating boosting hull durability and resistance"
+            },
+            {
+              "label": "Chassis",
+              "detail": "Core mechanical frames offering varied mounting configurations"
             }
           ]
         },
         {
           "order": 3,
-          "name": "Seafood & Fish Tier List",
-          "description": "Complete breakdown of all catchable fish and seafood ranked by market value, customer demand, and profit margins.",
-          "href": "/seafood/my-seafood-stand-tier-list",
-          "displayType": "tier-grid",
+          "name": "buildaboss Best Builds",
+          "description": "Proven assembly strategies and component loadouts tailored for high damage, impenetrable defense, and balanced clearing efficiency.",
+          "href": "/builds/build-a-boss-best-builds",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "S Tier",
-              "detail": "King Crab · Lobster Boil — Highest profit per customer"
+              "label": "Assault",
+              "detail": "Full gun armament engineered for maximum burst DPS"
             },
             {
-              "label": "A Tier",
-              "detail": "Salmon · Jumbo Shrimp · Tuna Steak — Reliable fast earners"
+              "label": "Tank",
+              "detail": "Heavy composite armor paired with self-repair systems"
             },
             {
-              "label": "B Tier",
-              "detail": "Clams · Oysters · Squid — Great mid-game margin"
+              "label": "Beam",
+              "detail": "Focused dual-laser setup for continuous pierce damage"
             },
             {
-              "label": "C Tier",
-              "detail": "Common Sardines · Small Crab — Starter seafood"
+              "label": "Balanced",
+              "detail": "Symmetrical gun and laser mix backed by medium armor"
             }
           ]
         },
         {
           "order": 4,
-          "name": "Best Upgrades Progression",
-          "description": "Optimal order to spend your cash: expand kitchen stations, hire waitstaff, speed up grills, and upgrade seating.",
-          "href": "/upgrades/my-seafood-stand-best-upgrades",
-          "displayType": "feature-cards",
+          "name": "buildaboss Levels & Zones Tier List",
+          "description": "Tier ranking of progression zones and milestone battle stages based on tactical difficulty, clearing requirements, and reward payout.",
+          "href": "/levels/build-a-boss-levels-guide",
+          "displayType": "tier-grid",
           "highlights": [
             {
-              "label": "Priority 1",
-              "detail": "Cooking Speed & Extra Burners — Clears customer backlog"
+              "label": "S",
+              "detail": "Endgame Zone 9 & 10 Boss Rushes · Highest Gem Yield"
             },
             {
-              "label": "Priority 2",
-              "detail": "Customer Seating Capacity — Increases simultaneous diners"
+              "label": "A",
+              "detail": "Mid-Game Zones 6-8 Mechanical Arenas · Rapid Cash Farming"
             },
             {
-              "label": "Priority 3",
-              "detail": "Auto-Chef / Waiter Staff — Passive hands-free revenue"
+              "label": "B",
+              "detail": "Intermediate Zones 3-5 · Balanced Level Progression"
+            },
+            {
+              "label": "C",
+              "detail": "Starter Zones 1-2 · Fundamental Building Practice"
             }
           ]
         },
         {
           "order": 5,
-          "name": "How to Get Cash Fast",
-          "description": "Top money-making strategies, VIP evaluation, tip maximization, and high-efficiency serving tips.",
-          "href": "/guide/my-seafood-stand-how-to-get-cash-fast",
-          "displayType": "feature-cards",
+          "name": "buildaboss Cash and Gems Guide",
+          "description": "Essential farming tips and resource management guide on earning Cash and Gems quickly through combat and reinvesting into gear.",
+          "href": "/guide/build-a-boss-cash-and-gems-guide",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Combo",
-              "detail": "Chain orders quickly to build the Customer Happiness multiplier"
+              "label": "Cash",
+              "detail": "Primary currency earned from combat victories to purchase standard parts"
             },
             {
-              "label": "High Margin",
-              "detail": "Focus high-tier seafood boils during peak customer rush hours"
+              "label": "Gems",
+              "detail": "Premium gems awarded from zone milestones for high-tier upgrades"
             },
             {
-              "label": "Reinvest",
-              "detail": "Keep 20% cash reserve for fresh ingredient replenishment"
+              "label": "Farming",
+              "detail": "Replay completed quick-clear levels for rapid recurring currency"
+            },
+            {
+              "label": "Upgrades",
+              "detail": "Prioritize offensive weapon power before investing in heavy chassis"
             }
           ]
         },
         {
           "order": 6,
-          "name": "Plot Expansion & Stand Customization",
-          "description": "Unlock bigger land plots, arrange optimal cooking layouts, and add high-value decorative upgrades.",
-          "href": "/upgrades/my-seafood-stand-how-to-upgrade-plot",
-          "displayType": "feature-cards",
+          "name": "buildaboss 3 Star Guide",
+          "description": "Tactical strategies to meet time and performance criteria to earn 3-star ratings across all 75 levels.",
+          "href": "/guide/build-a-boss-3-star-guide",
+          "displayType": "step-by-step",
           "highlights": [
             {
-              "label": "Plot 1",
-              "detail": "Starter Beach Stand (3 Tables, 1 Grill)"
+              "label": "1",
+              "detail": "Analyze enemy attack vectors and tailor directional armor"
             },
             {
-              "label": "Plot 2",
-              "detail": "Boardwalk Restaurant (6 Tables, 2 Grills, Boil Station)"
+              "label": "2",
+              "detail": "Mount high-velocity lasers to eliminate targets before time limits"
             },
             {
-              "label": "Plot 3",
-              "detail": "Luxury Pier Seafood Pavilion (Full Automation & VIP Seating)"
+              "label": "3",
+              "detail": "Avoid hull damage to secure maximum star completion score"
+            },
+            {
+              "label": "4",
+              "detail": "Collect 3-star milestone rewards for bonus Cash and Gems"
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "buildaboss Codes",
+          "description": "Up-to-date tracker for official Build a Boss promotional codes, redeemable bonuses, and active reward instructions.",
+          "href": "/codes/build-a-boss-codes",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "COMING-SOON",
+              "detail": "Check back for official developer promotional codes"
+            },
+            {
+              "label": "STAY-TUNED",
+              "detail": "Follow official announcements for bonus Cash and Gems"
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "buildaboss Updates & Roadmap",
+          "description": "Release tracker and development roadmap detailing new parts, zone expansions, and balance tweaks for Build a Boss on Roblox.",
+          "href": "/updates/build-a-boss-updates",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Release",
+              "detail": "Endless PvE launch featuring 75 levels and 10 zones"
+            },
+            {
+              "label": "Armory",
+              "detail": "Arsenal expansion with new guns, lasers, and armor types"
+            },
+            {
+              "label": "Roadmap",
+              "detail": "Upcoming endless boss modifiers and challenge modes"
+            },
+            {
+              "label": "Balance",
+              "detail": "Continual adjustments to part costs and combat physics"
             }
           ]
         }
@@ -300,27 +362,27 @@
     },
     "faq": {
       "title": "Frequently Asked Questions",
-      "description": "Quick answers to the most common questions about My Seafood Stand.",
+      "description": "Quick answers to common questions about Build a Boss on Roblox.",
       "items": [
         {
-          "question": "What is My Seafood Stand?",
-          "answer": "My Seafood Stand is a free-to-play fighting RPG on Roblox based on the Bleach anime. You choose one of game mechanics Shinigami (Soul Reaper), Quincy, or Hollow each with unique progression, combat abilities, and evolution systems. The game features 130+ skills, a level 100 cap, boss fights, and deep build customization."
+          "question": "What is Build a Boss on Roblox?",
+          "answer": "Build a Boss is a 2D pixel-art PvE building game developed by taapr studios on Roblox where players assemble custom bosses from guns, lasers, and armor, then battle through 75 levels across 10 zones."
         },
         {
-          "question": "Which race should beginners pick?",
-          "answer": "Shinigami is the most straightforward starter race, while Hollow and Quincy offer more specialized progression routes. Compare their abilities before committing."
+          "question": "How do I get more Cash and Gems in Build a Boss?",
+          "answer": "In Build a Boss, you earn Cash and Gems by clearing PvE battle levels. You can repeat completed stages for quick Cash and reach zone milestone stars for bonus Gems."
         },
         {
-          "question": "What is the current level cap?",
-          "answer": "The current level cap is 100, with more than 130 skills available across trees and race progression systems."
+          "question": "What are the best parts to upgrade first in Build a Boss?",
+          "answer": "In early Build a Boss stages, prioritize weapon firepower such as rapid-fire guns and piercing lasers to clear stages quickly, then invest into heavier protective armor for later zones."
         },
         {
-          "question": "Where do I find active codes?",
-          "answer": "Use the Codes page for working codes, rewards, expiration notes, and redeem instructions."
+          "question": "Are there active codes for Build a Boss?",
+          "answer": "Check our Build a Boss Codes guide regularly for any newly released developer codes, reward redemptions, and instructions on unlocking free in-game currency."
         },
         {
-          "question": "Are boss guides updated?",
-          "answer": "Boss pages are organized with spawn notes, attack patterns, strategies, drop tables, and related next steps for progression."
+          "question": "How many levels and zones are currently in Build a Boss?",
+          "answer": "Build a Boss currently features 75 levels distributed across 10 distinct zones, with each level presenting unique enemy encounters and 3-star rating goals."
         }
       ]
     },
