@@ -149,15 +149,19 @@ Basierend auf Spielerfahrungen und Community-Berichten auf privaten Servern erha
 Die Berechnung effektiver Boss-Parameter sollte nicht auf reinem Raten basieren. Nutzen Sie diese standardisierten Formeln, um Gesundheitspools und Schadensschwellen für unterschiedliche Gruppengrößen zu kalibrieren.
 
 ### 1. Formel für die maximale Boss-Gesundheit
-$$\text{Max HP} = \text{Basiswert} + (\text{Spieleranzahl} \times \text{Klassen-Gesundheitsmedian} \times \text{Dauerskalar})$$
+
+> **Formel / Formula:** `Max HP = Basiswert + (Spieleranzahl * Klassen-Gesundheitsmedian * Dauerskalar)`
+
 
 - **Basiswert**: Fester Schwellenwert (z. B. 2.500 HP).
-- **Spieleranzahl**: Anzahl aktiver Kämpfer ($N$).
+- **Spieleranzahl**: Anzahl aktiver Kämpfer (`N`).
 - **Klassen-Gesundheitsmedian**: Durchschnittliche Spielergesundheit (typischerweise 125–200 HP).
-- **Dauerskalar**: Passt die Kampflänge an (Nutzen Sie $3,0$ für standardmäßige 5-Minuten-Gefechte).
+- **Dauerskalar**: Passt die Kampflänge an (Nutzen Sie `3,0` für standardmäßige 5-Minuten-Gefechte).
 
 ### 2. Zielformel für Nahkampfschaden
-$$\text{Nahkampftreffer} = \text{Niedrigste Klassen-Max-HP} \times 0,65$$
+
+> **Formel / Formula:** `Nahkampftreffer = Niedrigste Klassen-Max-HP * 0,65`
+
 *Designziel:* Nahkampfangriffe sollten hart genug treffen, um leichte Klassen zu bedrohen, ohne sie bei voller Gesundheit direkt mit einem Schlag auszuschalten (One-Shot).
 
 ### 3. Check-Tabelle für Fähigkeitsschaden

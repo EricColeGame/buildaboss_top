@@ -91,7 +91,9 @@ Am Balancing entscheidet sich meist, ob ein Custom-Kampf begeistert oder frustri
 
 Berechnen Sie die erwartete Kampfdauer auf Basis des durchschnittlichen Schadens pro Sekunde (DPS), den ein Spieler austeilt. Ein standardmäßiger Custom-Bosskampf sollte bei einem durchschnittlichen Versuch zwischen 3 und 6 Minuten dauern.
 
-$$\text{Boss-Gesundheit} = \text{Durchschnittliche Spieler-DPS} \times \text{Gewünschte Kampfdauer (Sekunden)} \times \text{Uptime-Verhältnis}$$
+
+> **Formel / Formula:** `Boss-Gesundheit = Durchschnittliche Spieler-DPS * Gewünschte Kampfdauer (Sekunden) * Uptime-Verhältnis`
+
 
 Da Spieler viel Zeit mit Ausweichen verbringen, anstatt Schaden zu verursachen, müssen Sie ein Uptime-Verhältnis einrechnen (meist 0,35 bis 0,50). Wenn Spieler den Boss nur 40 % der Zeit treffen können, muss der effektive Lebenspunkte-Pool diese defensiven Phasen berücksichtigen.
 

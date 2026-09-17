@@ -149,15 +149,19 @@ Based on player experience and community reports across custom community servers
 Calculating effective boss parameters should not rely on guesswork. Use these standardized formulas to calibrate health pools and damage thresholds across varying group sizes.
 
 ### 1. Boss Max Health Formula
-$$\text{Max HP} = \text{Base Value} + (\text{Player Count} \times \text{Class Health Median} \times \text{Duration Scalar})$$
+
+> **Formel / Formula:** `Max HP = Base Value + (Player Count * Class Health Median * Duration Scalar)`
+
 
 - **Base Value**: Flat threshold (e.g., 2,500 HP).
-- **Player Count**: Number of active combatants ($N$).
+- **Player Count**: Number of active combatants (`N`).
 - **Class Health Median**: Average player health (typically 125–200 HP).
-- **Duration Scalar**: Adjusts length (use $3.0$ for standard 5-minute engagements).
+- **Duration Scalar**: Adjusts length (use `3.0` for standard 5-minute engagements).
 
 ### 2. Melee Damage Target Formula
-$$\text{Melee Hit} = \text{Lowest Class Max HP} \times 0.65$$
+
+> **Formel / Formula:** `Melee Hit = Lowest Class Max HP * 0.65`
+
 *Design Goal:* Melee attacks should hit hard enough to threaten light classes without one-shotting them outright from full health.
 
 ### 3. Ability Damage Check Table

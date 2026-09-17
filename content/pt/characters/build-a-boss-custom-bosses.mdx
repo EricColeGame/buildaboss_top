@@ -149,15 +149,19 @@ Com base na experiência prática e em relatórios em servidores comunitários, 
 O cálculo dos parâmetros do chefe não deve depender de suposições. Utilize estas fórmulas estruturadas para calibrar a vida total e os limites de dano para grupos de diferentes tamanhos.
 
 ### 1. Fórmula de Vida Máxima do Chefe
-$$\text{HP Máximo} = \text{Valor Base} + (\text{Qtd. de Jogadores} \times \text{Mediana de Vida da Classe} \times \text{Escalar de Duração})$$
+
+> **Formel / Formula:** `HP Máximo = Valor Base + (Qtd. de Jogadores * Mediana de Vida da Classe * Escalar de Duração)`
+
 
 - **Valor Base**: Limiar fixo (ex.: 2.500 HP).
-- **Qtd. de Jogadores**: Número de combatentes ativos ($N$).
+- **Qtd. de Jogadores**: Número de combatentes ativos (`N`).
 - **Mediana de Vida da Classe**: Média de vida de um jogador (normalmente entre 125 e 200 HP).
-- **Escalar de Duração**: Ajusta o tempo da luta (use $3.0$ para confrontos padrão de 5 minutos).
+- **Escalar de Duração**: Ajusta o tempo da luta (use `3.0` para confrontos padrão de 5 minutos).
 
 ### 2. Fórmula de Dano do Ataque Corpo a Corpo
-$$\text{Golpe Físico} = \text{Menor HP Máximo de Classe} \times 0.65$$
+
+> **Formel / Formula:** `Golpe Físico = Menor HP Máximo de Classe * 0.65`
+
 *Objetivo de Design:* Os ataques básicos corpo a corpo devem bater com força suficiente para ameaçar classes frágeis sem eliminá-las instantaneamente com a vida cheia.
 
 ### 3. Tabela de Referência de Dano de Habilidades

@@ -149,15 +149,19 @@ A partir de la experiencia de jugadores y reportes en servidores comunitarios, l
 Calcular los parámetros efectivos del jefe no debe ser fruto del azar. Utiliza estas fórmulas estandarizadas para calibrar la reserva de vida y los umbrales de daño según el tamaño del grupo.
 
 ### 1. Fórmula de Salud Máxima del Jefe
-$$\text{HP Máx} = \text{Valor Base} + (\text{Número de Jugadores} \times \text{Mediana de Salud de Clases} \times \text{Escalar de Duración})$$
+
+> **Formel / Formula:** `HP Máx = Valor Base + (Número de Jugadores * Mediana de Salud de Clases * Escalar de Duración)`
+
 
 - **Valor Base**: Umbral fijo inicial (ej., 2,500 HP).
-- **Número de Jugadores**: Cantidad de combatientes activos ($N$).
+- **Número de Jugadores**: Cantidad de combatientes activos (`N`).
 - **Mediana de Salud de Clases**: Promedio de vida de los jugadores (usualmente entre 125 y 200 HP).
-- **Escalar de Duración**: Ajusta la duración (usa $3.0$ para encuentros estándar de 5 minutos).
+- **Escalar de Duración**: Ajusta la duración (usa `3.0` para encuentros estándar de 5 minutos).
 
 ### 2. Fórmula de Daño Melé Objetivo
-$$\text{Golpe Melé} = \text{HP Máx de la Clase Más Frágil} \times 0.65$$
+
+> **Formel / Formula:** `Golpe Melé = HP Máx de la Clase Más Frágil * 0.65`
+
 *Objetivo de Diseño:* Los ataques cuerpo a cuerpo deben golpear con suficiente fuerza para amenazar a las clases ligeras sin matarlas instantáneamente de un solo impacto teniendo la salud completa.
 
 ### 3. Tabla de Comprobación de Daño por Habilidades
