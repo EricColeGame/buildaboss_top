@@ -1,9 +1,9 @@
 {
   "site": {
-    "name": "My Seafood Stand Wiki",
-    "shortName": "My Seafood Stand",
-    "tagline": "Complete Guides, Codes, Recipes & Tier Lists",
-    "description": "Your ultimate guide to My Seafood Stand on Roblox! Explore active codes, seafood recipes, best upgrades, profit strategies, and progression guides.",
+    "name": "Build a Boss Wiki",
+    "shortName": "Build a Boss",
+    "tagline": "Roblox Codes, Levels, Zones & Boss Builds Guide",
+    "description": "Build a Boss Wiki with Roblox codes, boss builds, levels, zones, upgrades, parts, battle tips and beginner guides for building stronger custom bosses.",
     "legalNotice": "Non-official fan wiki. Made by players, for players."
   },
   "nav": {
@@ -30,17 +30,17 @@
       "description": "Complete My Seafood Stand guide on Roblox with active working codes, all fish & recipes, best upgrades tier list, and fast cash tips."
     },
     "hero": {
-      "eyebrow": "Fan-Made Community Wiki",
-      "title": "My Seafood Stand",
-      "description": "Master your restaurant in My Seafood Stand on Roblox. Access all active codes, complete fish & recipe catalog, optimal upgrades, and pro money-making strategies.",
+      "eyebrow": "Pixel Boss Building PvE",
+      "title": "Build a Boss Wiki",
+      "description": "Build a powerful boss from guns, lasers and armor, battle enemies across challenging levels, earn cash and gems, and upgrade your custom boss.",
       "stats": [
-        "All Codes",
-        "All Fish & Recipes",
-        "Upgrade Guides",
-        "Fast Cash Tips"
+        "92K+ Visits",
+        "75 Levels",
+        "599 Players",
+        "10 Zones"
       ],
       "primaryCta": "Beginner Guide",
-      "secondaryCta": "Seafood Tier List",
+      "secondaryCta": "Boss Builds",
       "tertiaryCta": "Active Codes",
       "videoLabel": "Official media"
     },
@@ -342,9 +342,9 @@
       ]
     },
     "finalCta": {
-      "title": "Ready to Master My Seafood Stand?",
-      "description": "From your first steps in Fort Adams to endgame boss fights our community wiki has you covered with free, up-to-date guides.",
-      "primary": "Read the Beginner Guide",
+      "title": "Ready to Build Your Ultimate Boss?",
+      "description": "From assembling your first armor and guns to conquering all 75 levels across 10 zones, our community wiki has you covered with free, up-to-date guides.",
+      "primary": "Read Beginner Guide",
       "secondary": "Play on Roblox"
     }
   },
@@ -379,21 +379,21 @@
     "noGuidesAvailable": "No guides available yet. Check back soon!"
   },
   "footer": {
-    "aboutTitle": "My Seafood Stand Wiki",
-    "about": "My Seafood Stand Wiki is an independent fan-built guide hub covering progression routes, races, bosses, builds, and essential game knowledge for new and veteran players alike.",
+    "aboutTitle": "Build a Boss Wiki",
+    "about": "Build a Boss Wiki is an independent fan-built guide hub covering custom boss builds, weapons, lasers, armor, levels, zones, and essential game knowledge for new and veteran players alike.",
     "quickLinks": "Quick Links",
     "guides": "Guides",
     "legal": "Legal",
-    "copyright": "2026 My Seafood Stand Wiki. Not affiliated with Midnight Continent or Roblox.",
-    "description": "Free Bleach-inspired fighting RPG on Roblox. 3 races, 130+ skills, Lv100 cap.",
-    "playGame": "Play My Seafood Stand",
-    "officialDiscord": "Official Discord",
-    "officialYoutube": "Official YouTube",
-    "vvBuilder": "VV Builder (Skill Planner)",
+    "copyright": "2026 Build a Boss Wiki. Not affiliated with taapr studios or Roblox.",
+    "description": "Pixel Boss Building PvE on Roblox. Build bosses from guns, lasers & armor, 75 levels across 10 zones.",
+    "playGame": "Play Build a Boss",
+    "officialDiscord": "Roblox Community",
+    "officialYoutube": "Roblox YouTube",
+    "vvBuilder": "Boss Builder (Custom Planner)",
     "beginnerGuide": "Beginner Guide",
-    "raceGuides": "Race Guides",
-    "bossGuides": "Boss Guides",
-    "buildGuide": "Build Guide",
+    "raceGuides": "Levels & Zones",
+    "bossGuides": "Boss Builds",
+    "buildGuide": "Parts & Weapons",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
   }
