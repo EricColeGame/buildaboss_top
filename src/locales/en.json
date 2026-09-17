@@ -6,7 +6,15 @@
     "description": "Build a Boss Wiki with Roblox codes, boss builds, levels, zones, upgrades, parts, battle tips and beginner guides for building stronger custom bosses.",
     "legalNotice": "Non-official fan wiki. Made by players, for players."
   },
-  "nav": {},
+  "nav": {
+    "guide": "Guide",
+    "mechanics": "Mechanics",
+    "challenges": "Challenges",
+    "combat": "Combat",
+    "characters": "Characters",
+    "updates": "Updates",
+    "community": "Community"
+  },
   "home": {
     "meta": {
       "title": "Build a Boss Wiki — Codes, Levels, Zones & Boss Builds",
@@ -393,7 +401,6 @@
       "secondary": "Play on Roblox"
     }
   },
-  "bosses": {},
   "shared": {
     "wikiNavigation": "Wiki Navigation",
     "activeCodes": "Active Codes",
@@ -429,5 +436,33 @@
     "buildGuide": "Parts & Weapons",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
+  },
+  "guide": {
+    "overviewTitle": "Build a Boss Guides",
+    "overviewDescription": "Comprehensive beginner and advanced guides for Build a Boss on Roblox, covering boss building, level progression, and essential tips."
+  },
+  "mechanics": {
+    "overviewTitle": "Build a Boss Mechanics",
+    "overviewDescription": "In-depth breakdown of Build a Boss core mechanics, including custom boss design, weapon systems, parts assembly, and zone dynamics."
+  },
+  "challenges": {
+    "overviewTitle": "Build a Boss Challenges",
+    "overviewDescription": "Tackle the most difficult boss encounters, challenge modes, and hardcore survival battles in Build a Boss."
+  },
+  "combat": {
+    "overviewTitle": "Build a Boss Combat",
+    "overviewDescription": "Master combat tactics, boss-killing strategies, weapon DPS loadouts, and defense setups to defeat any enemy in Build a Boss."
+  },
+  "characters": {
+    "overviewTitle": "Build a Boss Characters & Bosses",
+    "overviewDescription": "Complete catalog of giant bosses, custom boss archetypes, enemy units, and character encounters across all 10 zones."
+  },
+  "updates": {
+    "overviewTitle": "Build a Boss Updates",
+    "overviewDescription": "Latest patch notes, new boss releases, balance adjustments, and upcoming feature logs for Build a Boss on Roblox."
+  },
+  "community": {
+    "overviewTitle": "Build a Boss Community",
+    "overviewDescription": "Join the Build a Boss community, share custom boss builds, find Discord links, Reddit discussions, and connect with fellow creators."
   }
 }

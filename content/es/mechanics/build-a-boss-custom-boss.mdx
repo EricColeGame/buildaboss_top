@@ -1,0 +1,164 @@
+export const metadata = {
+  title: "Guía para crear un jefe personalizado (Build a Boss): Mecánicas avanzadas, estadísticas y equilibrio",
+  description: "Domina las mecánicas para crear un jefe personalizado (build a boss custom boss). Aprende fórmulas, escalado de estadísticas, scripts de habilidades y consejos de equilibrio para batallas multijugador épicas.",
+  category: "mechanics",
+  date: "2026-09-18",
+}
+
+Diseñar tus propios encuentros de incursión transforma un shooter de arena convencional o un RPG de acción en un enfrentamiento inolvidable. Aprender a **crear un jefe personalizado (build a boss custom boss)** permite a los creadores llevar los sistemas de combate al límite absoluto, ofreciendo al mismo tiempo desafíos justos y emocionantes para los equipos de asalto. Cuando diseñas un **jefe personalizado desde cero**, controlas cada detalle: desde las curvas de escalado de vida y los medidores de furia hasta secuencias complejas de bullet hell en múltiples fases. Comprender las matemáticas y la lógica de comportamiento detrás de estos encuentros marca la diferencia entre una frustrante esponja de balas y una batalla legendaria.
+
+El diseño de estos colosos personalizados —un concepto popularizado por los mods comunitarios en sandboxes multijugador y títulos como *Team Fortress 2* (a través de los clásicos entornos de scripting de la [Valve Developer Community](https://developer.valvesoftware.com/wiki/Main_Page))— exige equilibrar el daño infligido por los jugadores con mecánicas creativas para el jefe. En esta guía, desglosamos los principios fundamentales de diseño, fórmulas de escalado de vida, programación de habilidades por fases y métricas de pruebas de juego para que tus creaciones dominen el servidor sin provocar desconexiones masivas por frustración.
+
+---
+
+## Anatomía fundamental de un encuentro personalizado
+
+Todo encuentro memorable se apoya en un bucle de jugabilidad bien estructurado. Si un enemigo se limita a avanzar en línea recta mientras absorbe miles de disparos, la pelea se vuelve monótona con rapidez. En su lugar, el diseño modular de jefes combina supervivencia, mecánicas de movilidad y respuestas al control de masas dentro de un conjunto coherente.
+
+Una configuración funcional para **crear un jefe personalizado (build a boss custom boss)** equilibra movilidad dinámica, resistencia al control de masas (CC) y anticipaciones (wind-ups) predecibles en los ataques. Los jefes requieren herramientas de desplazamiento —como supersaltos, golpes contra el suelo o teletransportes de corto alcance— para evitar que los jugadores abusen de alturas del terreno y posiciones seguras.
+
+| Componente de diseño | Implementación típica | Contraestrategia esperada del jugador | Error común |
+| :--- | :--- | :--- | :--- |
+| **Habilidad de movilidad** | Supersalto / Embestida veloz | Dispersarse, seguir la trayectoria aérea | Atravesar la geometría o quedarse atascado |
+| **Mitigación de daño** | Armadura plana + Límite de duración de CC | Foco de disparo concentrado, daño elemental sostenido | Fases de invulnerabilidad total excesivamente largas |
+| **Medidor de furia** | Carga al recibir daño | Dosificar ráfagas de daño, forzar habilidades trampa | Aniquilaciones de equipo instantáneas sin anticipación visual |
+| **Invocación de esbirros** | Oleadas periódicas (umbrales de PS) | Asignar roles dedicados a limpiar esbirros | Sobrecargar el servidor con retraso de entidades (lag) |
+| **Temporizador de enfurecimiento** | Límite estricto de 8 a 10 minutos | Ejecución de daño máximo por segundo (DPS) | Forzar chequeos de equipamiento en lugar de habilidad |
+
+---
+
+## Fórmulas de vida y sistemas de escalado
+
+El cálculo matemático más crítico al diseñar un jefe reside en los puntos de salud. Al **crear un jefe personalizado (build a boss custom boss)**, una barra de vida estática arruina por completo la experiencia cuando varía el número de jugadores en el servidor. Una reserva de vida ajustada para cuatro jugadores se desvanece en segundos ante una sala de 16 personas, mientras que un valor sobredimensionado hace matemáticamente imposible el combate con pocos jugadores.
+
+### Escalado dinámico según el número de jugadores
+
+El escalado dinámico comprueba automáticamente la plantilla de jugadores activos al inicio de la ronda y recalcula las estadísticas base.
+
+```
+Vida del jefe = Salud base + (Factor de escalado × Jugadores activos ^ Curva de escalado)
+```
+
+En los ajustes de equilibrio habituales, los reportes de la comunidad sugieren fijar la curva de escalado entre $1.15$ y $1.30$. El escalado lineal ($1.0$) resulta insuficiente debido a que los grupos más grandes se benefician de forma exponencial de la acumulación de desventajas (debuffs), auras de curación y fuego concentrado.
+
+| Número de jugadores | Salud base | Escalado lineal ($1.0$) | Curva exponencial ($1.25$) | Clasificación de armadura recomendada |
+| :--- | :--- | :--- | :--- | :--- |
+| **1 Jugador (Solo)** | 4,000 | 4,000 | 4,000 | 0% (Daño neto) |
+| **4 Jugadores** | 4,000 | 16,000 | 22,600 | 10% de mitigación |
+| **8 Jugadores** | 4,000 | 32,000 | 53,800 | 18% de mitigación |
+| **12 Jugadores** | 4,000 | 48,000 | 89,400 | 24% de mitigación |
+| **16 Jugadores** | 4,000 | 64,000 | 128,600 | 30% de mitigación |
+
+### Resistencia al control de masas
+
+Nunca permitas que los aturdimientos, ralentizaciones o empujes se apliquen al 100% de su efectividad. Los creadores experimentados implementan rendimientos decrecientes o convierten los aturdimientos duros en breves penalizaciones de movimiento. Por ejemplo:
+- **Resistencia al empuje:** Reduce los vectores de desplazamiento entrantes entre un 70% y un 85%.
+- **Límite de aturdimiento:** Restringe la duración del aturdimiento a un máximo de 0.75 segundos, activando inmediatamente después 5 segundos de inmunidad total a efectos de control.
+- **Límite de desventajas:** Evita que los perjuicios de daño basados en porcentaje (como sangrado o quemadura) se acumulen indefinidamente.
+
+---
+
+## Diseño de fases dinámicas y habilidades
+
+Las barras de vida lineales reducen la emoción. Los encuentros divididos en fases introducen urgencia, forzando a los jugadores a adaptar su posicionamiento y el uso de habilidades utilitarias en tiempo real. Al **crear un jefe personalizado (build a boss custom boss)**, estructurar el combate en 3 fases diferenciadas mantiene el interés alto desde la aparición hasta su derrota.
+
+```
+[ Fase 1: 100% - 66% PS ]  -->  Cuerpo a cuerpo estándar / Hostigamiento básico a distancia
+             ↓
+[ Fase 2: 65% - 31% PS ]   -->  Activación de peligros en la arena / Invocación de esbirros
+             ↓
+[ Fase 3: 30% - 0% PS ]    -->  Modo desesperación: Celeridad aumentada y ataques en área (Nova)
+```
+
+### Mecánicas de transición de fase
+
+Los puntos de transición deben incluir avisos visuales breves —como ondas de choque, animaciones de rugido o barreras de escudo temporales— que repelan a los jugadores sin provocar muertes instantáneas e inevitables.
+
+| Fase | Umbral de PS del jefe | Comportamiento principal de habilidades | Señal sonora / Efecto visual | Acción esperada del jugador |
+| :--- | :--- | :--- | :--- | :--- |
+| **Fase 1** | 100% al 66% | Golpes de barrido, impactos contra el suelo | Zumbido grave, partículas de polvo | Mantener distancias, aprender patrones de ataque |
+| **Fase 2** | 65% al 31% | Bombardeo de arena, llamada de esbirros | Sirena aguda, temblor de pantalla | Dividir objetivos, priorizar esbirros |
+| **Fase 3** | 30% al 0% | Velocidad de ataque duplicada, embestida furiosa | Aura roja, rugido ensordecedor | Gastar enfriamientos defensivos/ofensivos, esquivar continuamente |
+
+### Señalización visual y acústica (Telegraphing)
+
+La justicia del combate radica en una comunicación clara. Ningún jugador debería preguntarse: "¿Qué me acaba de matar?"
+1. **Fotogramas de inicio (Startup Frames):** Asegúrate de que los ataques pesados o letales tengan un tiempo de carga previo de al menos 1.2 segundos.
+2. **Identidad sonora:** Asigna pistas de audio distintivas a cada ataque (por ejemplo, un clic metálico para una embestida o un grito gutural antes de una explosión en área).
+3. **Proyección en el suelo (Decals):** Dibuja círculos en el terreno que delimiten el radio de impacto para que los jugadores puedan identificar las zonas seguras con precisión.
+
+---
+
+## Consideraciones de equilibrio entre clases y armas
+
+Un error recurrente al implementar un **jefe personalizado (build a boss custom boss)** consiste en contrarrestar en exceso configuraciones de equipamiento específicas. Por ejemplo, otorgar al jefe una resistencia extrema al daño a distancia anula por completo a los francotiradores, mientras que un castigo excesivo al combate cuerpo a cuerpo arruina a los especialistas de corto alcance.
+
+| Arquetipo de jugador | Ventaja del jefe frente a la clase | Mecánica de contraataque a incluir | Métrica de ajuste de equilibrio |
+| :--- | :--- | :--- | :--- |
+| **Largo alcance / Francotiradores** | Alta resistencia a la caída de proyectiles | Añadir escudos proyectables o saltos de aproximación | Reducir el daño crítico por tiro a la cabeza a 1.5x en vez de 3x |
+| **Cuerpo a cuerpo explosivo (Burst)** | Daño de hendidura masivo | Introducir ventanas seguras tras ataques pesados | Permitir un microdesestabilizado al asestar golpes críticos traseros |
+| **Soporte / Sanadores** | Alta prioridad de fijación de objetivos | Señalizar los acercamientos para dar tiempo a protegerlos | Limitar las auras reductoras de curación del jefe a un 35% |
+| **Control de área / Trampas** | Gran caja de colisión que detona trampas | El jefe detona trampas sufriendo daño leve a sí mismo | Las trampas aplican ralentización moderada en vez de inmovilización total |
+
+La experiencia de los jugadores y las opiniones de la comunidad demuestran que las batallas resultan más satisfactorias cuando todas las clases contribuyen a la victoria. Si los apoyos sienten que su curación es irrelevante o los causantes de daño explosivo ven que sus impactos no tienen respuesta visual, el interés en el combate decae rápidamente.
+
+---
+
+## Metodología de implementación paso a paso
+
+Dar vida a un adversario personalizado requiere pruebas metódicas. Sigue este flujo estándar de despliegue para minimizar errores que puedan romper la partida:
+
+```
+Concepto y silueta  -->  Hitbox y esqueleto de movimiento  -->  Estadísticas base  -->  Lógica de habilidades  -->  Prueba de estrés en servidor cerrado
+```
+
+### 1. Establecer la silueta del modelo
+Selecciona o anima un modelo que supere visiblemente la estatura estándar de los jugadores (generalmente entre 1.3x y 1.8x la escala normal). Una silueta reconocible garantiza que los participantes identifiquen al jefe en medio de mapas caóticos o cubiertos de humo.
+
+### 2. Configurar hitboxes y zonas de precisión
+Asegúrate de que las zonas de impacto crítico (como la cabeza o un núcleo brillante) coincidan con la malla visual. Cajas de impacto desalineadas o desplazadas provocan disparos fallidos injustificados, transmitiendo una sensación imprecisa y defectuosa al jugador.
+
+### 3. Implementar la lógica base de habilidades
+Estructura los activadores principales antes de añadir los efectos visuales definitivos. Prueba los temporizadores en un entorno de desarrollo simplificado:
+- Calcula los tiempos de reutilización en los ataques con armas.
+- Asigna las acciones de movilidad a teclas direccionales o disparadores de rango por IA.
+- Programa la ganancia del medidor de furia por cada instancia de daño recibido.
+
+### 4. Pruebas de estrés e iteración
+Organiza partidas privadas con evaluadores de confianza para recopilar datos de rendimiento. Vigila posibles caídas en el tick rate del servidor durante el despliegue de habilidades con muchas partículas y ajusta la duración de los proyectiles en consecuencia.
+
+---
+
+## Métricas de prueba y lista de verificación de ajuste
+
+Una vez que el combate sea jugable, apóyate en datos objetivos en lugar de suposiciones para calibrar los parámetros. Registra las estadísticas de partida a lo largo de un mínimo de 25 a 50 rondas para determinar si el jefe está bien equilibrado.
+
+| Métrica | Rango óptimo objetivo | Indicador de alerta | Medida correctiva |
+| :--- | :--- | :--- | :--- |
+| **Duración de la ronda** | 3.5 a 5.5 minutos | Menos de 2 minutos o más de 8 minutos | Modificar la salud base o el temporizador de enfurecimiento |
+| **Tasa de victoria del jefe** | 45% al 55% | Victorias por encima del 70% o bajo el 30% | Ajustar el daño infligido por impacto |
+| **Primera baja de jugador** | Minuto 1:00 al 1:30 | Primera muerte en menos de 20 segundos | Aumentar el tiempo de señalización en los ataques iniciales |
+| **Llegada a Fase 3** | 75% de las rondas completadas | Los equipos mueren sistemáticamente en Fase 1 | Disminuir la agresividad y el control de masas en Fase 1 |
+
+Utiliza esta lista de verificación rápida durante las sesiones de prueba:
+- [ ] ¿El jefe se queda atascado en marcos de puertas comunes o techos bajos?
+- [ ] ¿Se perciben todas las pistas auditivas a lo largo de la distancia máxima de combate en la arena?
+- [ ] ¿La interfaz muestra con precisión la salud restante del jefe en tiempo real?
+- [ ] ¿La entrada en modo furia otorga una breve invulnerabilidad para impedir que lo eliminen de forma instantánea?
+- [ ] ¿La velocidad de desplazamiento permite que un jugador con movilidad estándar mantenga las distancias mediante un posicionamiento adecuado?
+
+---
+
+## Preguntas frecuentes
+
+### ¿Cuál es el error más común al crear un jefe personalizado (build a boss custom boss)?
+El fallo más habitual es diseñar un combate con reservas de vida desmesuradas y ataques fulminantes de un solo golpe sin previo aviso. Un jefe bien diseñado debe funcionar como una danza: los ataques deben anticiparse con claridad, castigando el mal posicionamiento en lugar de provocar derrotas inmediatas mediante mecánicas imposibles de esquivar.
+
+### ¿Cómo evito que los jugadores aprovechen el terreno de la arena contra mi jefe personalizado?
+Incorpora habilidades de movilidad vertical, como supersaltos a gran velocidad o ganchos que atraigan a los objetivos. Además, programa una comprobación de zona inaccesible o "anticampeo": si el jefe no logra trazar una ruta hacia un jugador que le inflige daño en un lapso de 6 segundos, desata una lluvia de proyectiles o morteros en toda la arena dirigida hacia las posiciones elevadas.
+
+### ¿Cuánto daño debería infligir un jefe personalizado por ataque?
+Los ataques automáticos regulares deberían restar entre el 20% y el 35% de la salud máxima de un jugador promedio, permitiendo margen para la recuperación y la asistencia sanitaria. Las habilidades más devastadoras (como un impacto contra el suelo fuertemente telegrafiado) pueden llegar a infligir entre un 70% y un 85% de daño, dejando al jugador al borde de la eliminación si comete un fallo de posicionamiento. Reserva las mecánicas de muerte instantánea exclusivamente para el vencimiento del temporizador de enfurecimiento.
+
+### ¿Se puede crear un jefe personalizado adecuado tanto para juego en solitario como en grupo?
+Sí, siempre que incorpores un sistema de escalado dinámico de estadísticas que adapte la salud del jefe, su producción de daño y la frecuencia de aparición de esbirros en función de la cantidad de jugadores conectados. Sin una fórmula de escalado automatizada, un encuentro pensado para incursiones grupales resultará insuperable para un jugador en solitario debido a la disparidad en la economía de acciones.
