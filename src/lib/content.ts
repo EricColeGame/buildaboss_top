@@ -246,6 +246,44 @@ const GROUP_TITLES: Record<string, string> = {
   community: "Community",
 };
 
+// locale → 分组标题映射（按需本地化，未配置则回退到 GROUP_TITLES）
+const GROUP_TITLES_BY_LOCALE: Record<string, Record<string, string>> = {
+  es: {
+    guide: "Guía",
+    mechanics: "Mecánicas",
+    challenges: "Desafíos",
+    combat: "Combate",
+    characters: "Personajes",
+    updates: "Actualizaciones",
+    community: "Comunidad",
+  },
+  pt: {
+    guide: "Guia",
+    mechanics: "Mecânicas",
+    challenges: "Desafios",
+    combat: "Combate",
+    characters: "Personagens",
+    updates: "Atualizações",
+    community: "Comunidade",
+  },
+  de: {
+    guide: "Leitfaden",
+    mechanics: "Mechaniken",
+    challenges: "Herausforderungen",
+    combat: "Kampf",
+    characters: "Charaktere",
+    updates: "Updates",
+    community: "Community",
+  },
+};
+
+// locale → "Overview" 翻译
+const OVERVIEW_LABEL_BY_LOCALE: Record<string, string> = {
+  es: "Resumen",
+  pt: "Visão Geral",
+  de: "Übersicht",
+};
+
 // 分组排序顺序
 const GROUP_ORDER: string[] = [
   "guide",

@@ -24,11 +24,12 @@
       "eyebrow": "Roblox Community-Wiki",
       "title": "Build a Boss Wiki",
       "description": "Dein ultimativer Leitfaden für Build a Boss auf Roblox. Erfahre, wie du Bosse aus Waffen, Lasern und Rüstungen baust und 75 Level in 10 Zonen meisterst.",
-      "stats": {
-        "zones": "10 Zonen",
-        "levels": "75 Level",
-        "genre": "Pixel Boss-Building PvE"
-      },
+      "stats": [
+        "Über 92K Besuche",
+        "75 Level",
+        "599 Spieler",
+        "10 Zonen"
+      ],
       "primaryCta": "Start-Leitfaden",
       "secondaryCta": "Module erkunden",
       "tertiaryCta": "Auf Roblox spielen",
@@ -44,22 +45,24 @@
       "title": "Starte in Build a Boss",
       "cards": [
         {
+          "number": "1",
           "title": "Einsteiger-Tipps",
-          "desc": "Lerne die Grundlagen des Bauens, Platzierens von Waffen und Beschwörens deines ersten Bosses.",
-          "badge": "Wichtig",
-          "action": "Basis-Guide lesen"
+          "description": "Master the basics of assembling parts, equipping weapons, and launching into PvE battles from day one."
         },
         {
+          "number": "2",
           "title": "Herstellung & Kombinationen",
-          "desc": "Meistere die Platzierung von Lasern, Waffen und Rüstung für maximale Boss-Stärke.",
-          "badge": "Strategie",
-          "action": "Baupläne ansehen"
+          "description": "Maximize battle winnings and learn the most effective farming methods to fund continuous boss upgrades."
         },
         {
+          "number": "3",
           "title": "Zonen-Fortschritt",
-          "desc": "Schreite durch die 75 Level und 10 Zonen voran, indem du Schaden und Verteidigung optimierst.",
-          "badge": "Fortschritt",
-          "action": "Zonen ansehen"
+          "description": "Discover optimal combinations of guns, armor plating, and energy lasers to counter tough level bosses."
+        },
+        {
+          "number": "4",
+          "title": "Active Codes & Rewards",
+          "description": "Find the latest working codes and learn how to redeem free rewards and in-game boosts."
         }
       ]
     },
@@ -74,16 +77,58 @@
       ],
       "cards": [
         {
-          "title": "Boss-Planer",
-          "desc": "Optimiere die Anordnung der Teile, um den ultimativen Boss solo oder im Koop zu erschaffen.",
           "badge": "Beliebt",
-          "action": "Erkunden"
+          "title": "Boss-Planer",
+          "description": "Everything you need from your first login to mastering the basics of combat and progression.",
+          "href": "/beginner-guide"
         },
         {
-          "title": "Kampf-Leitfaden",
-          "desc": "Ausweichtaktiken, Angriffsmuster der Bosse und hocheffiziente Waffenrotationen.",
           "badge": "Kampf",
-          "action": "Lernen"
+          "title": "Kampf-Leitfaden",
+          "description": "All working codes with rewards redeem before they expire.",
+          "href": "/codes"
+        },
+        {
+          "badge": "Updated",
+          "title": "Equipment Database",
+          "description": "94 items across 5 slots complete gear database with stats, rarity, and sources.",
+          "href": "/equipment"
+        },
+        {
+          "badge": "Popular",
+          "title": "Which Race Should You Pick?",
+          "description": "Shinigami, Quincy, or Hollow compare all three and find your perfect playstyle.",
+          "href": "/races/best-race"
+        },
+        {
+          "badge": "New",
+          "title": "Enemies & Monsters",
+          "description": "23 enemy types across 5 regions drops, locations, and farming tips.",
+          "href": "/enemies"
+        },
+        {
+          "badge": "Popular",
+          "title": "Boss Locations & Drops",
+          "description": "Every boss location, drop table, and respawn timer in one reference.",
+          "href": "/boss-locations-drops-respawn-times"
+        },
+        {
+          "badge": "Popular",
+          "title": "Best Builds",
+          "description": "Optimal stat allocation, skill tree picks, and Charm combos for every playstyle.",
+          "href": "/builds/best-builds"
+        },
+        {
+          "badge": "New",
+          "title": "Shikai Tier List",
+          "description": "All 6 Shinigami Shikai types ranked by PvP and PvE performance.",
+          "href": "/tier-list/shikai"
+        },
+        {
+          "badge": "New",
+          "title": "World Events Guide",
+          "description": "Supply Caches, Raids, and endgame world events with rare rewards.",
+          "href": "/world-events"
         }
       ]
     },
@@ -93,12 +138,36 @@
         "Build a Boss ist ein Pixel-PvE-Spiel auf Roblox, bei dem Spieler Teile wie Waffen, Laser und Rüstungen sammeln, um beeindruckende Bosse zu bauen und zu bekämpfen.",
         "Mit 75 Levels in 10 verschiedenen Zonen kannst du deine Bauten allein oder im Team auf die Probe stellen und exklusive Belohnungen freischalten."
       ],
-      "stats": {
-        "levels": "75 Level",
-        "zones": "10 Zonen",
-        "combat": "PvE & Boss-Bauen",
-        "platform": "Roblox"
-      },
+      "stats": [
+        {
+          "label": "Developer",
+          "value": "taapr studios"
+        },
+        {
+          "label": "Platform",
+          "value": "Roblox"
+        },
+        {
+          "label": "Genre",
+          "value": "PvE / Boss Builder"
+        },
+        {
+          "label": "Visits",
+          "value": "92K+"
+        },
+        {
+          "label": "Levels",
+          "value": "75"
+        },
+        {
+          "label": "Zones",
+          "value": "10"
+        },
+        {
+          "label": "Style",
+          "value": "2D Pixel Art"
+        }
+      ],
       "cta": "Jetzt auf Roblox spielen"
     },
     "explore": {
@@ -106,34 +175,224 @@
       "description": "Durchstöbere alle Kategorien nach Artikeln, Leitfäden und Expertenstrategien.",
       "modules": [
         {
+          "order": 1,
           "name": "Leitfäden",
-          "desc": "Schritt-für-Schritt-Anleitungen und Schnellstart-Tipps."
+          "description": "Step-by-step introduction covering core mechanics: buying parts, assembling your custom boss, entering PvE combat, earning Cash and Gems, and rebuilding for power.",
+          "href": "/guide/build-a-boss-beginner-guide",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Purchase starter weapons and chassis armor from the parts shop"
+            },
+            {
+              "label": "2",
+              "detail": "Assemble guns and lasers onto your custom mechanical boss"
+            },
+            {
+              "label": "3",
+              "detail": "Deploy into combat levels to defeat enemies and claim Cash and Gems"
+            },
+            {
+              "label": "4",
+              "detail": "Rebuild and upgrade components to take on higher zone levels"
+            }
+          ]
         },
         {
+          "order": 2,
           "name": "Mechaniken",
-          "desc": "Detaillierte Erklärungen zu Blockplatzierung und Attributen."
+          "description": "Comprehensive overview of weapons, lasers, armor plates, and structural components used to customize and strengthen your boss.",
+          "href": "/parts/build-a-boss-parts-guide",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Guns",
+              "detail": "Rapid-fire ballistic cannons delivering consistent physical damage"
+            },
+            {
+              "label": "Lasers",
+              "detail": "High-energy beam weapons piercing multiple enemy shields"
+            },
+            {
+              "label": "Armor",
+              "detail": "Reinforced plating boosting hull durability and resistance"
+            },
+            {
+              "label": "Chassis",
+              "detail": "Core mechanical frames offering varied mounting configurations"
+            }
+          ]
         },
         {
+          "order": 3,
           "name": "Kampf",
-          "desc": "Kampftaktiken und Waffenoptimierung."
+          "description": "Proven assembly strategies and component loadouts tailored for high damage, impenetrable defense, and balanced clearing efficiency.",
+          "href": "/builds/build-a-boss-best-builds",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Assault",
+              "detail": "Full gun armament engineered for maximum burst DPS"
+            },
+            {
+              "label": "Tank",
+              "detail": "Heavy composite armor paired with self-repair systems"
+            },
+            {
+              "label": "Beam",
+              "detail": "Focused dual-laser setup for continuous pierce damage"
+            },
+            {
+              "label": "Balanced",
+              "detail": "Symmetrical gun and laser mix backed by medium armor"
+            }
+          ]
         },
         {
+          "order": 4,
           "name": "Updates",
-          "desc": "Patchnotizen und Neuigkeiten im Spiel."
+          "description": "Tier ranking of progression zones and milestone battle stages based on tactical difficulty, clearing requirements, and reward payout.",
+          "href": "/levels/build-a-boss-levels-guide",
+          "displayType": "tier-grid",
+          "highlights": [
+            {
+              "label": "S",
+              "detail": "Endgame Zone 9 & 10 Boss Rushes · Highest Gem Yield"
+            },
+            {
+              "label": "A",
+              "detail": "Mid-Game Zones 6-8 Mechanical Arenas · Rapid Cash Farming"
+            },
+            {
+              "label": "B",
+              "detail": "Intermediate Zones 3-5 · Balanced Level Progression"
+            },
+            {
+              "label": "C",
+              "detail": "Starter Zones 1-2 · Fundamental Building Practice"
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "name": "buildaboss Cash and Gems Guide",
+          "description": "Essential farming tips and resource management guide on earning Cash and Gems quickly through combat and reinvesting into gear.",
+          "href": "/guide/build-a-boss-cash-and-gems-guide",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Cash",
+              "detail": "Primary currency earned from combat victories to purchase standard parts"
+            },
+            {
+              "label": "Gems",
+              "detail": "Premium gems awarded from zone milestones for high-tier upgrades"
+            },
+            {
+              "label": "Farming",
+              "detail": "Replay completed quick-clear levels for rapid recurring currency"
+            },
+            {
+              "label": "Upgrades",
+              "detail": "Prioritize offensive weapon power before investing in heavy chassis"
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "name": "buildaboss 3 Star Guide",
+          "description": "Tactical strategies to meet time and performance criteria to earn 3-star ratings across all 75 levels.",
+          "href": "/guide/build-a-boss-3-star-guide",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Analyze enemy attack vectors and tailor directional armor"
+            },
+            {
+              "label": "2",
+              "detail": "Mount high-velocity lasers to eliminate targets before time limits"
+            },
+            {
+              "label": "3",
+              "detail": "Avoid hull damage to secure maximum star completion score"
+            },
+            {
+              "label": "4",
+              "detail": "Collect 3-star milestone rewards for bonus Cash and Gems"
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "buildaboss Codes",
+          "description": "Up-to-date tracker for official Build a Boss promotional codes, redeemable bonuses, and active reward instructions.",
+          "href": "/codes/build-a-boss-codes",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "COMING-SOON",
+              "detail": "Check back for official developer promotional codes"
+            },
+            {
+              "label": "STAY-TUNED",
+              "detail": "Follow official announcements for bonus Cash and Gems"
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "buildaboss Updates & Roadmap",
+          "description": "Release tracker and development roadmap detailing new parts, zone expansions, and balance tweaks for Build a Boss on Roblox.",
+          "href": "/updates/build-a-boss-updates",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Release",
+              "detail": "Endless PvE launch featuring 75 levels and 10 zones"
+            },
+            {
+              "label": "Armory",
+              "detail": "Arsenal expansion with new guns, lasers, and armor types"
+            },
+            {
+              "label": "Roadmap",
+              "detail": "Upcoming endless boss modifiers and challenge modes"
+            },
+            {
+              "label": "Balance",
+              "detail": "Continual adjustments to part costs and combat physics"
+            }
+          ]
         }
       ]
     },
     "faq": {
       "title": "Häufig gestellte Fragen",
       "description": "Antworten auf die wichtigsten Fragen zu Gameplay, Beschwörung und Mechaniken.",
-      "q1": "Wie beschwöre ich meinen ersten Boss?",
-      "a1": "Sammle die erforderlichen Grundmaterialien im Beschwörungsmenü, baue den Altar-Kern in deiner Arena und aktiviere ihn, um den Kampf zu starten.",
-      "q2": "Kann ich Bosse zusammen mit Freunden bekämpfen?",
-      "a2": "Ja! Du kannst andere Spieler in deine Arena einladen, um gemeinsam stärkere Bosse zu besiegen und Belohnungen zu teilen.",
-      "q3": "Wie erhalte ich seltenere Baumaterialien?",
-      "a3": "Seltene Materialien erhältst du durch das Besiegen höherstufiger Bosse und das Abschließen spezieller zeitlich begrenzter Herausforderungen.",
-      "q4": "Gehen meine Bauten verloren, wenn der Boss mich besiegt?",
-      "a4": "Nein, deine Arena und deine platzierten Blöcke bleiben sicher erhalten; du musst lediglich neue Katalysatoren nutzen, um den Boss erneut zu beschwören."
+      "items": [
+        {
+          "question": "Was ist Build a Boss auf Roblox?",
+          "answer": "Build a Boss is a 2D pixel-art PvE building game developed by taapr studios on Roblox where players assemble custom bosses from guns, lasers, and armor, then battle through 75 levels across 10 zones."
+        },
+        {
+          "question": "How do I get more Cash and Gems in Build a Boss?",
+          "answer": "In Build a Boss, you earn Cash and Gems by clearing PvE battle levels. You can repeat completed stages for quick Cash and reach zone milestone stars for bonus Gems."
+        },
+        {
+          "question": "What are the best parts to upgrade first in Build a Boss?",
+          "answer": "In early Build a Boss stages, prioritize weapon firepower such as rapid-fire guns and piercing lasers to clear stages quickly, then invest into heavier protective armor for later zones."
+        },
+        {
+          "question": "Are there active codes for Build a Boss?",
+          "answer": "Check our Build a Boss Codes guide regularly for any newly released developer codes, reward redemptions, and instructions on unlocking free in-game currency."
+        },
+        {
+          "question": "How many levels and zones are currently in Build a Boss?",
+          "answer": "Build a Boss currently features 75 levels distributed across 10 distinct zones, with each level presenting unique enemy encounters and 3-star rating goals."
+        }
+      ]
     },
     "finalCta": {
       "title": "Bereit, deinen nächsten Boss zu bauen?",
