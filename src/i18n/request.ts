@@ -1,9 +1,16 @@
 import { getRequestConfig } from "next-intl/server";
 import { hasLocale } from "next-intl";
-import { routing } from "./routing";
+import { routing, type Locale } from "./routing";
 import en from "@/locales/en.json";
 
 type Messages = typeof en;
+
+const messagesMap: Record<Locale, () => Promise<{ default: Messages } | Messages>> = {
+  "en": async () => en,
+  "es": () => import("@/locales/es.json"),
+  "pt": () => import("@/locales/pt.json"),
+  "de": () => import("@/locales/de.json"),
+};
 
 function deepMerge<T>(base: T, override: Partial<T>): T {
   if (
@@ -33,15 +40,15 @@ function deepMerge<T>(base: T, override: Partial<T>): T {
 
 export default getRequestConfig(async ({ requestLocale }) => {
   const requested = await requestLocale;
-  const locale = hasLocale(routing.locales, requested)
+  const locale = (hasLocale(routing.locales, requested)
     ? requested
-    : routing.defaultLocale;
+    : routing.defaultLocale) as Locale;
 
   let localeMessages: Partial<Messages> = {};
-  if (locale !== "en") {
+  if (locale !== "en" && messagesMap[locale]) {
     try {
-      const imported = await import(`@/locales/${locale}.json`);
-      localeMessages = imported.default || imported;
+      const imported = await messagesMap[locale]();
+      localeMessages = (imported as { default: Messages }).default || imported;
     } catch {
       // Fallback cleanly to en if locale json doesn't exist yet
       localeMessages = {};
